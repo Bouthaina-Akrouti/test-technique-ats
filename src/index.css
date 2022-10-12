@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "Light";
+  src: local("Light"),
+   url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Regular";
+  src: local("Regular"),
+   url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SemiBold";
+  src: local("SemiBold"),
+   url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Bold";
+  src: local("Bold"),
+   url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+.font-face-light {
+  font-family: 'Light';
+}
+.font-face-rg {
+  font-family: "Regular";
+}
+.font-face-sb {
+  font-family: "SemiBold";
+}
+.font-face-bold {
+  font-family: "Bold";
+}
+.dark-color {
+  color: #333E48;
+}
+.danger-color {
+  color: #EE0000;
+}

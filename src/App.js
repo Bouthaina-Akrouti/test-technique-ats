@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import FooterMobile from './components/footer-mobile/footer';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Home from './container/home';
+import HomeMoboile from './container/home-mobile';
 
 function App() {
+  const width = window.innerWidth;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {
+        width > 900 ? <Home /> : <HomeMoboile />
+      }
+      {
+        width > 900 ? <Footer /> : <FooterMobile />
+      }
+      
     </div>
   );
 }
